@@ -1,0 +1,56 @@
+{
+  "validation_timestamp": "2026-09-28T01:00:52.674418",
+  "reference_date": "2026-09-01",
+  "study_methodology": "Cross-Sectional Registry Association Study & Diagnostic Signal Benchmark",
+  "critical_methodology_disclosures": [
+    "Cross-sectional diagnostic association evaluated on static September 2026 census snapshot (1,000 active, 200 insolvent companies).",
+    "Insolvent entities cease statutory filing post-appointment; observed registry latency reflects post-insolvency administrative cessation in addition to pre-failure distress.",
+    "True prospective predictive lead time requires longitudinal point-in-time panel data across multiple calendar periods.",
+    "Risk tier PDs (42.8%, 12.5%, 1.4%) are supervisory through-the-cycle (TTC) proxy benchmarks calibrated to PRA/Basel corporate credit studies, rather than fitted survival probabilities."
+  ],
+  "sample_active_count": 1000,
+  "sample_insolvent_count": 200,
+  "registry_roc_auc": 0.8604,
+  "registry_gini": 0.7208,
+  "statutory_delinquency_incidence_pct": 69.0,
+  "registry_cessation_latency_days": {
+    "median": 213,
+    "q1": 124,
+    "q3": 275,
+    "min": 1,
+    "max": 337,
+    "interpretation": "Elapsed calendar days past accounts due date for insolvent entities in static census"
+  },
+  "portfolio_tier_calibration": [
+    {
+      "tier": "RED_CRITICAL",
+      "count": 11,
+      "drawn_exposure": 6748211.61,
+      "committed_limit": 7110000.0,
+      "avg_score": 83.2,
+      "supervisory_proxy_pd_pct": 42.8,
+      "lgd_unmonitored_pct": 75.0,
+      "lgd_monitored_pct": 55.0
+    },
+    {
+      "tier": "AMBER_ELEVATED",
+      "count": 32,
+      "drawn_exposure": 22255758.13,
+      "committed_limit": 25951000.0,
+      "avg_score": 42.3,
+      "supervisory_proxy_pd_pct": 12.5,
+      "lgd_unmonitored_pct": 65.0,
+      "lgd_monitored_pct": 50.0
+    },
+    {
+      "tier": "GREEN_STANDARD",
+      "count": 207,
+      "drawn_exposure": 81502331.23,
+      "committed_limit": 174784000.0,
+      "avg_score": 1.2,
+      "supervisory_proxy_pd_pct": 1.4,
+      "lgd_unmonitored_pct": 45.0,
+      "lgd_monitored_pct": 45.0
+    }
+  ]
+}
