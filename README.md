@@ -143,7 +143,7 @@ UK_Corporate_Credit_Radar/
 ### Installation & Execution
 ```bash
 # 1. Clone repository
-git clone https://github.com/dhruvchaudhary/UK_Corporate_Credit_Radar.git
+git clone https://github.com/hjonks/UK_Corporate_Credit_Radar.git
 cd UK_Corporate_Credit_Radar
 
 # 2. Install dependencies
